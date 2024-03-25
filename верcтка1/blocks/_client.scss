@@ -1,0 +1,77 @@
+.client{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    
+    h1,h2{
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    &__cards{
+        margin: 99px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+        padding: 0 3% 0 5%;
+    }
+
+    &__card{
+        margin: auto;
+        max-width: 571px;
+        border-radius: 70px 0 70px 0;
+        box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+        img{
+            float: left;
+            margin: 44px 0 0 -61px;
+        }
+        h4{
+            margin: 41px 0 0 100px;
+        }
+        .work{
+            font-size: 16px;
+            font-weight: 500;
+            color: $text-color-2;
+        }
+        .decor{
+            font-size: 96px;
+            float: right;
+            margin: -35px 34px 0 0;
+            color: $accent1;
+        }
+        p{
+            margin-left: 99px;
+            padding-bottom: 50px;
+        }
+    }
+}
+@media(max-width:1470px){
+    .client__cards {
+        gap: 5%;
+        img{
+            padding: 0 0 0 3%;
+        }
+    }
+ }
+ @media(max-width:1285px){
+
+    .client__card .work {
+        font-size: 14px;
+    }
+    .client__card .decor{
+        font-size: 80px;
+    }
+ }
+ @media(max-width:1285px){
+    .client__card .decor{
+        margin: -35px 10px 0 0;
+    }
+ }
+ @media(max-width:1075px){
+    .client__card .work {
+        font-size: 13px;
+    }
+    .client__card .decor{
+        font-size: 60px;
+    }
+ }

@@ -1,0 +1,84 @@
+$text-color-1: #212121;
+$text-color-2: #646464;
+$text-color-3: #ffffff;
+
+$font-family-pop: "Poppins", sans-serif;
+
+$accent1: #CAA892;
+$accent2: #37806B;
+
+$back-color: #F8F8F8;
+
+
+%button{
+    text-transform: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: $accent2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0 20px 0;
+}
+
+body{
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: $text-color-3;
+}
+
+h1{
+    color: $text-color-2;
+    font-size: 20px;
+    font-family: $font-family-pop;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2{
+    color: $text-color-1;
+    font-family: $font-family-pop;
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: $text-color-1;
+}
+h4{
+    font-size: 24px;
+    color: $text-color-1;
+    font-weight: 700;
+}
+
+p{
+    font-size: 18px;
+    color: $text-color-2;
+    font-weight: 400;
+}
+
+
+@import "blocks/_nav.scss";
+@import "blocks/_header.scss";
+@import "blocks/_about.scss";
+@import "blocks/_working.scss";
+@import "blocks/_blog.scss";
+@import "blocks/_service.scss";
+@import "blocks/_client.scss";
+@import "blocks/_sign-up.scss";
+@import "blocks/_form.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_complaited.scss";

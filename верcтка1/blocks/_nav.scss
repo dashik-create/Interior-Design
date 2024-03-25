@@ -1,0 +1,66 @@
+.nav{
+    padding-top: 34px;
+    padding-bottom: 94px;
+    margin: auto;
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+    &__container{
+        max-width: 1346px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link{
+        ul{
+            width: 811px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            a{
+                text-align: center;
+                font-size: 16px;
+                color: #212121;
+                font-weight: 600;
+                &.active, &:hover{
+                    color: $text-color-2;
+                }
+            }
+            .signup{
+                width: 97px;
+                height: 32px;
+                color: white;
+                background-color: $accent1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px 0 15px 0;
+            }
+        }
+        &__container{
+            width: 650px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width:1330px){
+    .nav__link__container{
+        width: 550px;
+    }
+    .nav__link ul {
+        width: 700px;
+    }
+ }
+ @media(max-width:1100px){
+    .nav__link__container{
+        width: 450px;
+    }
+    .nav__link ul {
+        width: 600px;
+    }
+ }
